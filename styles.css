@@ -5,26 +5,27 @@ body {
 
 table {
   border-collapse: collapse;
-  border: 2px solid #eee;
+  border: 2px solid rgb(201, 201, 201);
 }
 
 thead,
 tfoot {
-  background: #eee;
+  background: rgb(201, 201, 201);
 }
 
 th,
 td {
   padding: 8px;
   text-align: center;
+  
 }
 
 tbody td:first-child {
-  color: red;
+  color: rgb(255, 128, 149);
 }
 
 tbody td:last-child {
-  color: blue;
+  color: rgb(83, 190, 233);
 }
 
 tfoot {
@@ -44,4 +45,58 @@ td.today {
 #today {
   cursor: pointer;
   user-select: none;
+}
+
+.calendar{
+  text-align:center;
+  margin:auto;
+}
+
+.hyouji {
+  text-align:center; 
+}
+
+.btn-square-shadow {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #66d8b6;
+  color: #FFF;
+  border-bottom: solid 4px #62958e;
+  border-radius: 3px;
+}
+.btn-square-shadow:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+
+.sun {
+  color:red;
+}
+
+.mon {
+  color:yellow;
+}
+
+.tue {
+  color:peachpuff;
+}
+
+.wed {
+  color:green;
+}
+
+.thu {
+  color:orange;
+}
+
+.fri {
+  color:blue;
+}
+
+.sat {
+  color:purple;
 }

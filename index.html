@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="utf-8">
   <title>Calendar</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <table>
-    <thead>
-      <tr>
-        <th id="prev">&laquo;</th>
-        <th id="title" colspan="5">2020/05</th>
-        <th id="next">&raquo;</th>
-      </tr>
-      <tr>
-        <th>Sun</th>
-        <th>Mon</th>
-        <th>Tue</th>
-        <th>Wed</th>
-        <th>Thu</th>
-        <th>Fri</th>
-        <th>Sat</th>
-      </tr>
-    </thead>
-    <tbody>
-    </tbody>
-    <tfoot>
-      <tr>
-        <td id="today" colspan="7">Today</td>
-      </tr>
-    </tfoot>
-  </table>
+
+<body onload="LoadProc();">
+  <div>
+    <table class="calendar">
+      <thead>
+        <tr>
+          <th id="prev">&laquo;</th>
+          <th id="title" colspan="5">2020/05</th>
+          <th id="next">&raquo;</th>
+        </tr>
+        <tr>
+          <th class="sun">Sun</th>
+          <th class="mon">Mon</th>
+          <th class="tue">Tue</th>
+          <th class="wed">Wed</th>
+          <th class="thu">Thu</th>
+          <th class="fri">Fri</th>
+          <th class="sat">Sat</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td id="today" colspan="7">Today</td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="hyouji">
+      <h1>現在の時刻
+        <div id="DateTimeDisp"></div>
+      </h1>
+      <p><input type="button" id="reload" value="再読み込みをする" class="btn-square-shadow"></p>
+    </div>
+  </div>
 
   <script src="main.js"></script>
 </body>
+
 </html>
