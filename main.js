@@ -139,7 +139,7 @@ console.clear();
 }
 
       window.addEventListener("load",function(){
-        var ele=document.getElementsById("DateTimeDisp")[0];
+        var ele=document.getElementsByTagName("output")[0];
         setInterval(function(){
           //現在時刻のDateオブジェクトを生成
           var date2 = new Date();
